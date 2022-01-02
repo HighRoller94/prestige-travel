@@ -7,10 +7,14 @@
     <title>Prestige</title>
     <link rel="browser icon" type="image/jpg" href="../images/travelcon.ico" />
     <link rel="stylesheet" href="/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/swiper-bundle.min.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
+
+    <!-- NAVBAR -->
+
     <nav class="navbar">
         <div class="nav__container fade-in slide-in from-up">
             <a href="#home" id="navbar__logo">PRESTIGE</a>
@@ -24,15 +28,21 @@
                     <a href="#explore" class="navbar__links" id="explore-page">Explore</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                    <a href="#destinations" class="navbar__links" id="about-page">Destinations</a>
                 </li>
-                <li class="navbar__btn">
-                    <a href="" class="nav__button" id="signup">Let's travel!</a>
-                </li> 
+                <li class="navbar__item">
+                    <a href="#discover" class="navbar__links" id="about-page">Discover</a>
+                </li>
             </ul>
         </div>
     </nav>
+    
+    <!-- SCROLL TO TOP BUTTON -->
+
     <div class="scroll__top" onClick="scrollToTop();"></div>
+
+    <!-- HERO SPLASH -->
+
     <div class="hero__section" id="home">
         <div class="hero__title">
             <div class="hero__header">
@@ -50,6 +60,9 @@
         </div>
         
     </div>
+
+    <!-- EXPLORE SECTION -->
+
     <div class="explore__section" id="explore">
         <div class="explore__images" >
             <img class="explore__image fade-in slide-in from-left" src="../images/photo1.svg" alt="" />
@@ -57,10 +70,13 @@
         </div>
         <div class="explore__text" >
             <h2>Your next holiday is just a click away...</h2>
-            <p>Find the most beautiful destinations around the world at affordable prices. You choose the place, Prestige will provide the experience.</p>
+            <p>Find the most beautiful destinations around the world at affordable prices. You choose the place, Prestige will guide you every step of the way.</p>
             <button class="btn__routes slide-in from-right"><i class="fas fa-search"></i>Routes</button>
         </div>
     </div>
+
+    <!-- STATS SECTION -->
+
     <div class="stats__background">
         <div class="stats__section">
             <div class="stat__section">
@@ -77,66 +93,10 @@
             </div>          
         </div>
     </div>
-    <div class="destinations__section">
-        <div class="destinations__header">
-            <h1>Top Destinations</h1>
-            <p>Some of the most popular packages at the best prices. You can't go wrong.</p>
-        </div>
-        <div class="destinations__images">
-            <div class="destination__image fade in slide-in from-up">
-                <div class="icon__text">
-                    <i class="fas fa-eye"></i>
-                    <p>64 views today</p>
-                    <div class="icon__arrow">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-                <h1>Vienna</h1>
-            </div>
-            <div class="destination__image fade in slide-in from-up">
-                <div class="icon__text">
-                    <i class="fas fa-eye"></i>
-                    <p>116 views today</p>
-                    <div class="icon__arrow">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-                <h1>Iceland</h1>
-            </div>
-            <div class="destination__image fade in slide-in from-up">
-                <div class="icon__text">
-                    <i class="fas fa-eye"></i>
-                    <p>64 views today</p>
-                    <div class="icon__arrow">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-                <h1>Hawaii</h1>
-            </div>
-            <div class="destination__image fade in slide-in from-up">
-                <div class="icon__text">
-                    <i class="fas fa-eye"></i>
-                    <p>64 views today</p>
-                    <div class="icon__arrow">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-                <h1>Hawaii</h1>
-            </div>
-            <div class="destination__image fade in slide-in from-up">
-                <div class="icon__text">
-                    <i class="fas fa-eye"></i>
-                    <p>64 views today</p>
-                    <div class="icon__arrow">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-                <h1>Hawaii</h1>
-            </div>
-        </div>
 
-    </div>
-    <div class="about__section">
+    <!-- ABOUT SECTION -->
+
+    <div class="about__section" id="about">
         <div class="about">
             <div class="about__text fade-in slide-in from-left" >
                 <h1>Dedicated to finding you the right trip away...</h1>
@@ -146,8 +106,209 @@
             <img class="about__image fade-in slide-in from-right" src="" alt="" />
         </div>
     </div>
-    <footer>
+
+    <!-- DESTINATIONS SECTION -->
+
+    <div class="destinations__section" id="destinations">
+        <div class="destinations__header">
+            <h1>Top Destinations</h1>
+            <p>Some of the most popular packages at the best prices. You can't go wrong.</p>
+        </div>
+        <div class="destination__cards">
+            <div class="destination__container fade in slide-in from-up">
+                <img src="images/phang-nga_thailand.svg" alt="" class="destination__image">
+                <div class="destination__text">
+                    <div class="destination__views">
+                        <i class="fas fa-eye"></i>
+                        <p>64 views today</p>
+                    </div>
+                    <div class="destination__header">
+                        <h1>Thailand</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="destination__container fade in slide-in from-up">
+                <img src="images/an-lam-retreats_vietnam.svg" alt="" class="destination__image">
+                <div class="destination__text">
+                    <div class="destination__views">
+                        <i class="fas fa-eye"></i>
+                        <p>59 views today</p>
+                    </div>
+                    <div class="destination__header">
+                        <h1>Vietnam</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="destination__container fade in slide-in from-up">
+                <img src="images/kauai__hawaii.svg" alt="" class="destination__image">
+                <div class="destination__text">
+                    <div class="destination__views">
+                        <i class="fas fa-eye"></i>
+                        <p>93 views today</p>
+                    </div>
+                    <div class="destination__header">
+                        <h1>Hawaii</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="destination__container fade in slide-in from-up">
+                <img src="images/maldives.svg" alt="" class="destination__image">
+                <div class="destination__text">
+                    <div class="destination__views">
+                        <i class="fas fa-eye"></i>
+                        <p>84 views today</p>
+                    </div>
+                    <div class="destination__header">
+                        <h1>Maldives</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="destination__container fade in slide-in from-up">
+                <img src="images/zante_greece.svg" alt="" class="destination__image">
+                <div class="destination__text">
+                    <div class="destination__views">
+                        <i class="fas fa-eye"></i>
+                        <p>112 views today</p>
+                    </div>
+                    <div class="destination__header">
+                        <h1>Greece</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DISCOVER SECTION -->
+
+    <div class="discover__section" id="discover">
+        <div class="discover__header">
+            <h1>Discover hidden <br> gems with Prestige</h1>
+            <p>Fancy somewhere different?</p> 
+        </div>
+        <div class="discover__container swiper-container slide-in from-up">
+            <div class="discover__wrapper swiper-wrapper">
+                <div class="discover__card swiper-slide">
+                    <img src="images/gems/peru.svg" class="discover__img" alt="" />
+                    <div class="discover__card-header">
+                        <h1>Peru</h1>
+                        <p>Machu Picchu</p>
+                    </div>
+                </div>
+                <div class="discover__card swiper-slide">
+                    <img src="images/gems/iceland.svg" class="discover__img" alt="" />
+                    <div class="discover__card-header">
+                        <h1>Iceland</h1>
+                        <p>Blue Lagoon</p>
+                    </div>
+                </div>
+                <div class="discover__card swiper-slide ">
+                    <img src="images/gems/costa__rica.svg" class="discover__img" alt="" />
+                    <div class="discover__card-header">
+                        <h1>Costa Rica</h1>
+                        <p>Machu Picchu</p>
+                    </div>
+                </div>
+                <div class="discover__card swiper-slide">
+                    <img src="images/gems/norway.svg" class="discover__img" alt="" />
+                    <div class="discover__card-header">
+                        <h1>Norway</h1>
+                        <p>Machu Picchu</p>
+                    </div>
+                </div>
+                <div class="discover__card swiper-slide">
+                    <img src="images/gems/indonesia.svg" class="discover__img" alt="" />
+                    <div class="discover__card-header">
+                        <h1>Indonesia</h1>
+                        <p>Machu Picchu</p>
+                    </div>
+                </div>
+                <div class="discover__card swiper-slide ">
+                    <img src="images/gems/japan.svg" class="discover__img" alt="" />
+                    <div class="discover__card-header">
+                        <h1>Japan</h1>
+                        <p>Machu Picchu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEWSLETTER SECTION -->
+
+    <div class="newsletter__section">
+        <div class="newsletter__container">
+            <div class="newsletter__header slide-in from-left">
+                <h1>Sign up to our newsletter!</h1>
+                <p>Sign up to our monthly newsletter and receive 20% off your first trip</p>
+            </div>
+            <div class="newsletter__input slide-in from-right">
+                <input type="text" name="email" />
+                <button class="newsletter__subscribe">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SPONSOR SECTION -->
+    <div class="sponsor__section">
+        <div class="sponsor__container">
+            <img src="images/logos/airbnb.svg" alt="" />
+            <img src="images/logos/expedia.svg" alt="" />
+            <img src="images/logos/booking.svg" alt="" />
+            <img src="images/logos/paypal.svg" alt="" />
+            <img src="images/logos/trivago.svg" alt="" />
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer__section">
+        <div class="footer__container fade in slide-in from-up">
+            <div class="footer__logo">
+                <h2>PRESTIGE</h2>
+                <p>The experience of <br> a lifetime</p>
+                <div class="footer__icons">
+                    <i class="fab fa-facebook-square icon"></i>
+                    <i class="fab fa-twitter-square icon"></i>
+                    <i class="fab fa-instagram-square icon"></i>
+                    <i class="fab fa-youtube icon"></i>
+                </div>
+            </div>
+            <ul class="footer__about">
+                <h2>About Us</h2>
+                <li>News and Media</li>
+                <li>Locations</li>
+                <li>Sign up</li>
+            </ul>
+            <ul class="footer__career">
+                <h2>Career</h2>
+                <li>Jobs</li>
+                <li>Join the Team</li>
+                <li>Become a member</li>
+            </ul>
+            <ul class="footer__support">
+                <h2>Support</h2>
+                <li>Support Center</li>
+                <li>FAQs</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <p>&copy; 2021 Prestige Worldwide</p>
     </footer>
+
     <script src="app.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper-container", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            spaceBetween: 75,
+            coverflowEffect: {
+                rotate: 0,
+            },
+        });
+    </script>
 </body>
 </html>
