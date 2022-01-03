@@ -205,7 +205,7 @@
 }
 
 .hero__header {
-    margin-top: 210px;
+    margin-top: 21vh;
 }
 
 .hero__header > h1 {
@@ -247,9 +247,11 @@
 }
 
 .hero__startSearching {
+    padding: 15px;
+    background-color:rgb(28, 109, 129, 0.7);
     display: flex;
-    justify-content: right;
-    width: 20%;
+    justify-content: center;
+    width: 17%;
     position: absolute;
     top: 71%;
     right: calc(12.5%);
@@ -464,7 +466,7 @@
     border: none;
     outline: none;
     width: 100%;
-    margin-left: 125px;
+    margin-left: 20%;
 }
 
 /* DESTINATIONS SECTION */
@@ -481,6 +483,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .destinations__header > h1 {
@@ -510,7 +513,7 @@
 
 .destination__container {
     height: 45vh;
-    width: 310px;
+    width: 100%;
     position: relative;
     overflow: hidden;
     transform: translateY(10%);
@@ -764,7 +767,7 @@
 
 .sponsor__container > img {
     filter: grayscale(100);
-    width: 175px;
+    width: 15%;
     opacity: .1;
     transition: 200ms ease-in;
 }
@@ -849,42 +852,54 @@
 /* MEDIA QUERIES - MOBILE */
 
 @media screen and (max-width: 768px) {
+    
+    /* NAVBAR */
+
     .nav__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 50px;
-        height: 64px;
+        height: 80px;
         z-index: 1;
         width: 100%;
     }
 
     #navbar__logo {
-        font-size: 2rem;
+        font-size: 1.8rem;
         display: flex;
         align-items: center;
+        padding-left: 53px;
     }
 
     .navbar__menu {
         display: grid;
         grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
         position: absolute;
         top: -1000px;
+        left: 5%;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: -1;
     }
 
     .navbar__menu.active {
-        background: #131313;
-        top: 100%;
+        background-color:rgb(28, 109, 129, 0.9);
+        top: 0;
+        right: 0;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
         height: 60vh;
         font-size: 1.6rem;
+    }
+
+    .navbar__menu.active #navbar__logo {
+        font-size: 1rem;
+    }
+
+    .navbar__menu.active .navbar__toggle .bar {
+        background:rgb(28, 109, 129);
+        z-index: 999;
     }
 
     .navbar__toggle .bar {
@@ -900,10 +915,11 @@
     }
 
     .navbar__links {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 2rem;
-        width: 100%;
-        display: table;
     }
 
     .navbar__btn {
@@ -922,8 +938,9 @@
     #mobile-menu {
         position: absolute;
         top: 20%;
-        right: 5%;
+        right: 8%;
         transform: translate(5%, 20%);
+        z-index: 999;
     }
 
     .navbar__toggle .bar {
@@ -942,6 +959,128 @@
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    /* SCROLL TOP*/
+
+    .scroll__top { 
+        position: fixed;
+        bottom: 400px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background: url(../images/arrow__up.png);
+        background-color:rgb(28, 109, 129);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 10;
+        visibility: hidden;
+        opacity: 0;
+        transition: 500ms ease-in;
+    }
+    
+    .scroll__top.active {
+        bottom: 20px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* MAIN SECTION */
+
+    .hero__section {
+        width: 100%;
+        background-size: cover;
+    }
+    
+    .hero__title {
+        width: 78%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .hero__header > h1 {
+        font-size: 2.3rem;
+        width: 100%;
+        line-height: 3.5rem;
+    }
+    
+    .hero__way {
+        font-size: 3rem;
+    }
+    
+    .hero__header > p {
+        margin-top: 20px;
+        font-size: 1rem;
+        margin-bottom: 75px;
+    }
+    
+    .hero__header > a {
+        padding: 5px 18px;
+        color: #fcfcfc;
+        background-color: #ffa500;
+        outline: none;
+        border: none;
+        font-size: 1.1rem;
+        text-decoration: none;
+    }
+
+    .hero__startSearching {
+        display: none;
+    }
+
+    .fa-chevron-down {
+        color: white;
+        font-size: 3.5rem;
+        position: absolute;
+        left: calc(10%);
+        margin-top: 30%;
+        animation: bounce 2s infinite;
+    }
+
+    /* EXPLORE SECTION */
+
+    /* STATS */
+
+    .stat__section > h1 {
+        font-size: 1rem;
+    }
+    
+    .stat__section > p {
+        font-size: 0.8rem;
+    }
+
+    /* ABOUT */
+
+    /* DESTINATIONS */
+
+    .destinations__header > h1 {
+        font-size: 2.7rem;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    .destinations__header > p {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        font-size: .9rem;
+    }
+
+    /* DISCOVER */
+
+    /* NEWSLETTER */
+
+    /* SPONSORS */
+    
+    /* FOOTER */
+
+    .footer__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 /* FADE IN ANIMATIONS CSS */
