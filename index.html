@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prestige</title>
+    <title>Travelair</title>
     <link rel="browser icon" type="image/jpg" href="../images/travelcon.ico" />
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/swiper-bundle.min.css" >
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
@@ -17,7 +19,7 @@
 
     <nav class="navbar">
         <div class="nav__container fade-in slide-in from-up">
-            <a href="#home" id="navbar__logo">PRESTIGE</a>
+            <a href="#home" id="navbar__logo">Travelair</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -41,7 +43,7 @@
 
     <div class="scroll__top" onClick="scrollToTop();"></div>
 
-    <!-- HERO SPLASH -->
+    <!-- HERO  -->
 
     <div class="hero__section" id="home">
         <div class="hero__title">
@@ -51,27 +53,31 @@
                 <a class="fade-in slide-in from-up" href="#explore">Explore</a>
             </div>
         </div>
+
+        <!--  
         <div class="hero__startSearching slide-in from-right">
             <p>Start searching</p>
             <i class="fas fa-chevron-right"></i>
         </div>
+        -->
+
         <div class="arrow__container">
             <i class="fas fa-chevron-down fade in slide-in from-up"></i>
         </div>
-        
+        <div class="hero__fade"></div>
     </div>
 
     <!-- EXPLORE SECTION -->
 
     <div class="explore__section" id="explore">
-        <div class="explore__images" >
-            <img class="explore__image fade-in slide-in from-left" src="../images/photo1.svg" alt="" />
-            <img class="explore__altimage fade-in slide-in from-left"src="../images/photo2.svg" alt="" />
-        </div>
-        <div class="explore__text" >
+        <div class="explore__text slide-in from-left" >
             <h2>Your next holiday is just a click away...</h2>
             <p>Find the most beautiful destinations around the world at affordable prices. You choose the place, Prestige will guide you every step of the way.</p>
-            <button class="btn__routes slide-in from-right"><i class="fas fa-search"></i>Routes</button>
+            <button class="btn__routes"><i class="fas fa-search"></i>Routes</button>
+        </div>
+        <div class="explore__images" >
+            <img class="explore__image fade-in slide-in from-right" src="../images/photo1.svg" alt="" />
+            <img class="explore__altimage fade-in slide-in from-right"src="../images/photo2.svg" alt="" />
         </div>
     </div>
 
@@ -80,7 +86,7 @@
     <div class="stats__background">
         <div class="stats__section">
             <div class="stat__section">
-                <h1>27</h1>
+                <h1>27+</h1>
                 <p>Years of experience</p>
             </div>
             <div class="stat__section">
@@ -99,7 +105,7 @@
     <div class="about__section" id="about">
         <div class="about">
             <div class="about__text fade-in slide-in from-left" >
-                <h1>Dedicated to finding you the right trip away...</h1>
+                <h1>We're dedicated to finding you the <br> right trip away...</h1>
                 <p>Here at Prestige we're dedicated to finding you the right vacation for you, and providing the experience of a lifetime. Search from over 550 luxurious destinations around the world.</p>
                 <i class="fas fa-chevron-right"></i>
             </div>
@@ -236,7 +242,7 @@
     <!-- NEWSLETTER SECTION -->
 
     <div class="newsletter__section">
-        <div class="newsletter__container">
+        <div class="newsletter__container slide-in from-right">
             <div class="newsletter__header slide-in from-left">
                 <h1>Sign up to our newsletter!</h1>
                 <p>Sign up to our monthly newsletter and receive 20% off your first trip</p>
@@ -263,7 +269,7 @@
 
     <footer class="footer__section">
         <div class="footer__container fade in slide-in from-up">
-            <div class="footer__logo">
+            <div class="footer">
                 <h2>PRESTIGE</h2>
                 <p>The experience of <br> a lifetime</p>
                 <div class="footer__icons">
@@ -273,19 +279,19 @@
                     <i class="fab fa-youtube icon"></i>
                 </div>
             </div>
-            <ul class="footer__about">
+            <ul class="footer">
                 <h2>About Us</h2>
                 <li>News and Media</li>
                 <li>Locations</li>
                 <li>Sign up</li>
             </ul>
-            <ul class="footer__career">
+            <ul class="footer">
                 <h2>Career</h2>
                 <li>Jobs</li>
                 <li>Join the Team</li>
                 <li>Become a member</li>
             </ul>
-            <ul class="footer__support">
+            <ul class="footer">
                 <h2>Support</h2>
                 <li>Support Center</li>
                 <li>FAQs</li>

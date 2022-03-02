@@ -16,7 +16,6 @@ window.addEventListener('scroll', scrollTop);
 
 
 // Mobile Menu
-// Click animation is done through CSS
 
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
@@ -25,6 +24,15 @@ const mobileMenu = () => {
     menu.classList.toggle('is-active')
     menuLinks.classList.toggle('active')
 }
+
+const links = document.querySelectorAll(".navbar__links");
+
+links.forEach(link => {
+    link.addEventListener("click", () => {
+        menuLinks.classList.remove('active');
+        menu.classList.toggle('active');
+    })
+})
 
 menu.addEventListener('click', mobileMenu);
 
