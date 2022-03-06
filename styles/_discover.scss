@@ -1,0 +1,89 @@
+.discover__section {
+    padding: 4rem 0 6rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .discover__header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(10%);
+        h1 {
+            font-size: 2.75rem;
+            color: $mainTextColour;
+            font-family: $headerFont;
+            font-weight: 400;
+            width: 75%;
+            line-height: 1.15;
+        }
+    }
+    .discover__container { 
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10vh;
+        overflow: hidden;
+        transform: translateY(10%);
+        .discover__card {
+            display: block;
+            overflow: hidden;
+            width: 17rem;
+            height: 25rem;
+            transition: 200ms ease-in;
+            .discover__img {
+                transition: 200ms ease-in;
+                height: 100%;
+                object-fit: contain;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            .discover__card-header {
+                position: absolute;
+                display: block;
+                bottom: 1.5rem;
+                left: 1.5rem;
+                color: #fcfcfc;
+                h1 {
+                    font-weight: 400;
+                }
+            }
+        }
+        
+    }
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1312px) {
+    .discover__section {
+        padding: 6rem 0 6rem 0;
+        .discover__header {
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
+        .discover__container {
+            width: 65%;
+            .discover__card {
+                overflow: hidden;
+                display: block;
+                width: 400px;
+                height: 500px;
+                transition: 200ms ease-in;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.hero__section {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/hero__background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+    .hero__container {
+        width: 100%;
+        margin-left: 1.75rem;
+        .hero__header {
+            display: flex;
+            margin-top: 11.7rem;
+            .bar {
+                margin-top: .5rem;
+                background-color: #F2AC42;
+                width: .6rem;
+                height: 11rem;
+            }
+            .hero__title {
+                margin-left: .9rem;
+                margin-bottom: 3rem;
+                z-index: 1;
+                h1 {
+                    color: white;
+                    font-size: 2.95rem;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    line-height: 1.25;
+                    font-family: $headerFont;
+                    transform: translateY(10%);
+                    .hero__way {
+                        font-family: $headerFont;
+                        font-size: 4rem;
+                        font-weight: 600;
+                    }
+                }
+                p {
+                    color: white;
+                    margin-top: 1rem;
+                    margin-left: .2rem;
+                    font-size: 1.325rem;
+                    font-family: $headerFont;
+                    
+                }
+            }
+        }
+        a {
+            padding: .5rem 1.2rem;
+            color: white;
+            background-color: #F2AC42;
+            outline: none;
+            border: none;
+            font-size: 1.15rem;
+            transition: 200ms ease-in;
+            text-decoration: none;
+            &:hover {
+                background-color: #fdd18e;
+                cursor: pointer;
+            }
+        }
+    }
+    .hero__socials {
+        margin-top: 5rem;
+        padding-right: 1.5rem;
+        width: 60%;
+        display: flex;
+        text-align: right;
+        flex-direction: column;
+        width: 100%;
+        color: white;
+        .icon {
+            font-size: 2rem;
+            margin: .75rem 0;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero__section {
+        margin-top: -7.5rem;
+    }
+}
+
+@media screen and (min-width: 1312px) {
+    
+}
+

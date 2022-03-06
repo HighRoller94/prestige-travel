@@ -1,0 +1,77 @@
+.explore__section {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    .explore__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h2  {
+            font-family: $headerFont;
+            font-size: 2rem;
+            width: 90%;
+            color: $mainTextColour;
+            font-weight: $headerFontWeight;
+        }
+        p {
+            color: $offTextColour;
+            margin-top: 1.3rem;
+            width: 85%;
+            font-size: $bodyFontSize;
+        }
+    }
+    .explore__images {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        .explore__image {
+            width: 63%;
+            height: 100%;
+            z-index: 2;
+        }
+        .explore__altimage {
+            width: 50%;
+            margin-top: -10.5rem;
+            margin-left: 12rem;
+            z-index: 1;
+        }
+    }
+    .explore__btn {
+        display: flex;
+        margin-top: 3.5rem;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: .85rem;
+        padding: .35rem 1rem;
+        color: white;
+        background-color: #F2AC42;
+        outline: none;
+        border: none;
+        font-size: 1.1rem;
+        transition: 200ms ease-in;
+        text-decoration: none;
+        &:hover {
+            background-color: #fdd18e;
+        }
+        .ri-search-line {
+            margin-right: 1rem;
+            font-size: 1.15rem;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1312px) {
+    
+}
