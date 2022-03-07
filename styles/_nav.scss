@@ -10,7 +10,7 @@
     transition: 200ms;
     z-index: 99;
     .nav__container {
-        width: 90%;
+        width: 86%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -64,7 +64,6 @@
                 margin: 1.25rem 0;
                 .navbar__links {
                     text-transform: uppercase;
-                    
                     font-size: 1rem;
                     color: white;
                     &:hover {
@@ -116,11 +115,12 @@
                 background: none;
                 transition: 100ms;
                 margin: 1.25rem 0;
+                color: white;
                 .navbar__links {
                     text-transform: uppercase;
                     font-size: 1.1rem;
                     text-decoration: none;
-                    color: white;
+                    font-family: $bodyFont;
                     &:hover {
                         opacity: 0.8;
                         cursor: pointer;
@@ -143,28 +143,29 @@
 }
 
 .navbar.active {
-    height: 4rem;
-    background-color: rgb(255, 255, 255);
+    height: 3.5rem;
+    background-color: $backgroundColour;
     display: flex;
     align-items: center;
     box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
 }
+
 .navbar.active #navbar__logo {
-    color: $mainTextColour;
+    font-size: 1.4rem;
 }
 
-.navbar.active .nav__toggle {
-    color: $mainTextColour;
-}
 
 @media screen and (min-width: 768px) {
     .navbar {
+        width: 100%;
         height: 7rem;
         display: flex;
         .nav__container {
-
+            display: flex;
+            width: 87%;
+            justify-content: space-between;
             #navbar__logo {
-                font-size: 2rem;
+                font-size: 1.9rem;
             }
             .nav__toggle {
                 display: none;
@@ -173,34 +174,77 @@
                 display: flex;
                 flex-direction: row;
                 background: none;
-                position: static;
-                margin-left: auto;
-                transition: 0;
-                border: none;
-                z-index: 0;
-                top:0;
-                right: 0;
                 width: 100%;
+                align-content: center;
+                justify-content: right;
+                position: static;
+                transition: 0;
+                z-index: 0;
                 height: 3rem;
                 padding: 0;
                 .nav__close {
                     display: none;
                 }
-                .navbar__links {
-                    text-decoration: none;
+                .navbar__item {
+                    margin-left: 2.5rem;
+                    .navbar__links {
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                        font-family: $headerFont;
+                    }
                 }
                 .contact {
                     display: none;
+                    width: 0;
                 }
             }
         }
     }
 }
 
-.navbar.active .navbar__menu {
-    color: $mainTextColour;
+.navbar.active #navbar__logo {
+    font-size: 1.6rem;
+}
+
+.navbar.active .navbar__links {
+    font-size: .9rem;
 }
 
 @media screen and (min-width: 1312px) {
-    
+    .navbar {
+        height: 9rem;
+        .nav__container {
+            width: 73%;
+            #navbar__logo {
+                font-size: 2.5rem;
+            }
+            .navbar__menu {
+                .navbar__item {
+                    margin-left: 3.5rem;
+                    .navbar__links {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.navbar.active {
+    height: 3.75rem;
+    background-color: $backgroundColour;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+}
+
+.navbar.active #navbar__logo {
+    font-size: 1.8rem;
+}
+
+.navbar.active .navbar__links {
+    font-size: .9rem;
 }

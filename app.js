@@ -27,25 +27,25 @@ const highlightCurrent = () => {
 
     let scrollPosition = window.scrollY
 
-    if (window.innerWidth < 960 && scrollPosition < 786) {
+    if (scrollPosition < 786) {
         homeMenu.classList.add('menu-highlight')
         destinationsMenu.classList.remove('menu-highlight')
         exploreMenu.classList.remove('menu-highlight')
         discoverMenu.classList.remove('menu-highlight')
         return
-    } else if (window.innerWidth < 960 && scrollPosition < 2000) {
+    } else if (scrollPosition < 2000) {
         homeMenu.classList.remove('menu-highlight')
         destinationsMenu.classList.add('menu-highlight')
         exploreMenu.classList.remove('menu-highlight')
         discoverMenu.classList.remove('menu-highlight')
         return
-    } else if (window.innerWidth < 960 && scrollPosition < 3128) {
+    } else if (scrollPosition < 3128) {
         homeMenu.classList.remove('menu-highlight')
         destinationsMenu.classList.remove('menu-highlight')
         exploreMenu.classList.add('menu-highlight')
         discoverMenu.classList.remove('menu-highlight')
         return
-    } else if (window.innerWidth < 960 && scrollPosition < 4000) {
+    } else if (scrollPosition < 4000) {
         homeMenu.classList.remove('menu-highlight')
         destinationsMenu.classList.remove('menu-highlight')
         exploreMenu.classList.remove('menu-highlight')
