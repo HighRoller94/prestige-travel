@@ -1,17 +1,19 @@
 .sponsor__section {
     display: flex;
-    width: 90%;
+    width: 85%;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
     .sponsor__container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-items: center;
         img {
             filter: grayscale(100);
-            margin: 1rem 1rem;
-            width: 5rem;
+            margin: 1.5rem 1.5rem;
+            width: 10rem;
             opacity: .1;
             &:hover {
                 opacity: .07;
@@ -21,7 +23,17 @@
 }
 
 @media screen and (min-width: 768px) {
+.sponsor__section {
+    width: 90%;
 
+    .sponsor__container {
+        display: flex;
+        
+        img {
+            width: 20%;
+        }
+    }
+}
 }
 
 @media screen and (min-width: 1312px) {

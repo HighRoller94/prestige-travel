@@ -1,54 +1,59 @@
 .explore__section {
-    padding-top: 4rem;
+    padding-top: 4.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 85%;
-    margin: 0 auto;
-    .explore__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        h2  {
-            font-family: $headerFont;
-            font-size: 2rem;
-            width: 90%;
-            color: $mainTextColour;
-            font-weight: $headerFontWeight;
+    width: 100%;
+    .explore__container {
+        width: 85%;
+        margin: 0 auto;
+        .explore__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .explore__textBtn {
+                display: none;
+            }
+            h2  {
+                font-family: $headerFont;
+                font-size: 2rem;
+                width: 90%;
+                color: $mainTextColour;
+                font-weight: $headerFontWeight;
+            }
+            p {
+                color: $offTextColour;
+                margin-top: 1.3rem;
+                width: 85%;
+                font-size: $bodyFontSize;
+            }
         }
-        p {
-            color: $offTextColour;
-            margin-top: 1.3rem;
-            width: 85%;
-            font-size: $bodyFontSize;
-        }
-    }
-    .explore__images {
-        margin-top: 3rem;
-        display: flex;
-        flex-direction: column;
-        .explore__image {
-            width: 63%;
-            height: 100%;
-            z-index: 2;
-        }
-        .explore__altimage {
-            width: 50%;
-            margin-top: -10.5rem;
-            margin-left: 12rem;
-            z-index: 1;
+        .explore__images {
+            display: flex;
+            justify-content: center;
+            .explore__image {
+                width: 70vw;
+                height: 100%;
+                z-index: 2;
+                margin-top: 3.5rem;
+            }
+            .explore__altimage {
+                width: 60vw;
+                margin-left: -2.5rem;
+                margin-top: 10rem;
+                z-index: 1;
+            }
         }
     }
     .explore__btn {
         display: flex;
-        margin-top: 3.5rem;
+        margin-top: 4rem;
         align-items: center;
         justify-content: center;
         margin-left: auto;
-        margin-right: .85rem;
         padding: .35rem 1rem;
         color: white;
         background-color: #F2AC42;
@@ -59,6 +64,7 @@
         text-decoration: none;
         &:hover {
             background-color: #fdd18e;
+            cursor: pointer;
         }
         .ri-search-line {
             margin-right: 1rem;
@@ -69,9 +75,86 @@
 
 
 @media screen and (min-width: 768px) {
-
+.explore__section {
+    .explore__container {
+        width: 65%;
+        .explore__text {
+            h2  {
+                font-size: 2.2rem;
+            }
+            p {
+                margin-top: 1.5rem;
+                font-size: 1rem;
+                width: 80%;
+            }
+        }
+        .explore__images {
+            margin-top: 1rem;
+        }
+        .explore__btn {
+            margin-top: 5.5rem;
+        }
+    }
+    
+}
 }
 
 @media screen and (min-width: 1312px) {
-    
+    .explore__section {
+        align-items: baseline;
+
+        .explore__container {
+            width: 70%;
+            display: flex;
+            .explore__text {
+                text-align: left;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-top: 4rem;
+                width: 80%;
+
+                padding: 3rem;
+                .explore__textBtn {
+                    display: flex;
+                    margin-top: 4rem;
+                    align-items: center;
+                    justify-content: center;
+                    padding: .35rem 1rem;
+                    color: white;
+                    background-color: #F2AC42;
+                    outline: none;
+                    border: none;
+                    font-size: 1.1rem;
+                    transition: 200ms ease-in;
+                    text-decoration: none;
+                    &:hover {
+                        background-color: #fdd18e;
+                        cursor: pointer;
+                    }
+                    .ri-search-line {
+                        margin-right: 1rem;
+                        font-size: 1.15rem;
+                    }
+                }
+                h2 {
+                    width: 100%;
+                }
+                p {
+                    width: 70%;
+                }
+            }
+            .explore__images {
+                .explore__image {
+                    width: 17vw;
+                    margin-top: 0;
+                }
+                .explore__altimage {
+                    width: 15vw;
+                }
+            }
+            .explore__btn {
+                display: none;
+            }
+        }
+    }
 }

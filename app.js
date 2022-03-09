@@ -92,7 +92,7 @@ menuClose.addEventListener('click', closeMenu);
 const nav = document.querySelector('.navbar');
 
 const scrollNav = () => {
-    if (window.scrollY > 150) {
+    if (window.scrollY > 100) {
         nav.classList.add('active')
     } else {
         nav.classList.remove('active')

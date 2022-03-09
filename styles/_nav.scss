@@ -15,12 +15,12 @@
         justify-content: space-between;
         align-items: center;
         #navbar__logo {
+            font-family: $headerFont;
             text-decoration: none;
             color: white;
             z-index: 99;
             font-size: 1.6rem;
             font-weight: 600;
-            text-transform: uppercase;
         }
         .nav__toggle {
             margin-top: .65rem;
@@ -186,7 +186,7 @@
                     display: none;
                 }
                 .navbar__item {
-                    margin-left: 2.5rem;
+                    margin-left: 2.25rem;
                     .navbar__links {
                         text-decoration: none;
                         text-transform: capitalize;
@@ -216,15 +216,15 @@
     .navbar {
         height: 9rem;
         .nav__container {
-            width: 73%;
+            width: 70%;
             #navbar__logo {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             .navbar__menu {
                 .navbar__item {
                     margin-left: 3.5rem;
                     .navbar__links {
-                        font-size: 1.25rem;
+                        font-size: 1.1rem;
                     }
                 }
             }
@@ -234,15 +234,11 @@
 
 
 .navbar.active {
-    height: 3.75rem;
-    background-color: $backgroundColour;
+    height: 3.5rem;
+    background-color: #D2953A;
     display: flex;
     align-items: center;
     box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
-}
-
-.navbar.active #navbar__logo {
-    font-size: 1.8rem;
 }
 
 .navbar.active .navbar__links {
