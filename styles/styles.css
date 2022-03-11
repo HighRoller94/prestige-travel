@@ -822,15 +822,15 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 7rem;
+    margin-top: 6rem;
     color: #F2AC42;
   }
   .destinations__section .destinations__more h4 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-right: 1rem;
   }
   .destinations__section .destinations__more .ri-arrow-right-line {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -926,6 +926,7 @@
 
 @media screen and (min-width: 1312px) {
   .stats__background {
+    margin-top: 6rem;
     padding-top: 2rem;
     width: 100%;
   }
@@ -945,7 +946,7 @@
 }
 
 .explore__section {
-  padding-top: 4.5rem;
+  padding-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1727,7 +1728,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 2rem 0 4rem 0;
+    padding: 1rem 0 4rem 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1761,47 +1762,26 @@
     font-weight: 600;
     font-size: 1.3rem;
   }
+  .footer__section .footer__container .container .footer__logo p {
+    font-size: 1rem;
+    margin-top: 7px;
+  }
   .footer__section .footer__container .container .footer__logo .footer__icons {
     margin-top: 10px;
     font-size: 1.6rem;
   }
-  .footer__logo > h2 {
-    font-weight: 600;
-    font-size: 1.3rem;
-  }
-  .footer__logo > p {
-    font-size: 1rem;
-    margin-top: 7px;
-  }
-  .footer__icons {
-    margin-top: 10px;
-    font-size: 1.6rem;
-  }
-  .icon {
+  .footer__section .footer__container .container .footer__logo .footer__icons .icon {
     margin-right: 8px;
   }
-  .icon:hover {
+  .footer__section .footer__container .container .footer__logo .footer__icons .icon:hover {
     cursor: pointer;
   }
-  .footer {
-    list-style: none;
+  .footer__section .footer__container .footer__copyright h4 {
+    font-size: 1rem;
   }
-  .footer__section > p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #fcfcfc;
-    opacity: 0.8;
-    margin-bottom: 60px;
-  }
-  .footer__section > p:hover {
-    opacity: 1;
+  .footer__section .footer__container .footer__copyright p {
+    margin-top: -.1rem;
+    margin-left: 1rem;
   }
 }
 

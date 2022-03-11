@@ -136,18 +136,6 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            
-            .footer__logo {
-                a {
-
-                }
-                p {
-
-                }
-                .footer__icons {
-
-                }
-            }
         }
     }
 }
@@ -157,7 +145,7 @@
     .footer__section {
         .footer__container {
             display: flex;
-            padding: 2rem 0 4rem 0;
+            padding: 1rem 0 4rem 0;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -177,54 +165,30 @@
                         font-size: 1.3rem;
                     }
                     p {
-
+                        font-size: 1rem;
+                        margin-top: 7px;
                     }
                     .footer__icons {
                         margin-top: 10px;
                         font-size: 1.6rem;
+                        .icon {
+                            margin-right: 8px;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
                     }
                 }
             }
+            .footer__copyright {
+                h4 {
+                    font-size: 1rem;
+                }
+                p {
+                    margin-top: -.1rem;
+                    margin-left: 1rem;
+                }
+            }
         }
-        
-    }
-    .footer__logo > h2 {
-        font-weight: 600;
-        font-size: 1.3rem;
-    }
-    
-    .footer__logo > p {
-        font-size: 1rem;
-        margin-top: 7px;
-    }
-    
-    .footer__icons {
-        margin-top: 10px;
-        font-size: 1.6rem;
-    }
-    
-    .icon {
-        margin-right: 8px;
-    }
-    
-    .icon:hover {
-        cursor: pointer;
-    }
-    
-    .footer {
-        list-style: none;
-    }
-    
-    .footer__section > p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fcfcfc;
-        opacity: 0.8;
-        margin-bottom: 60px;
-    }
-    
-    .footer__section > p:hover {
-        opacity: 1;
     }
 }
