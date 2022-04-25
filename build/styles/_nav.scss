@@ -15,13 +15,12 @@
         justify-content: space-between;
         align-items: center;
         #navbar__logo {
-            font-family: 'Baloo2', sans-serif;
+            font-family: $headerFont;
             text-decoration: none;
             color: white;
             z-index: 99;
-            font-size: 2.5rem;
+            font-size: 1.6rem;
             font-weight: 600;
-            transition: 200ms ease-in;
         }
         .nav__toggle {
             margin-top: .65rem;
@@ -116,12 +115,12 @@
                 background: none;
                 transition: 100ms;
                 margin: 1.25rem 0;
+                color: white;
                 .navbar__links {
                     text-transform: uppercase;
                     font-size: 1.1rem;
                     text-decoration: none;
                     font-family: $bodyFont;
-                    letter-spacing: .1rem;
                     &:hover {
                         opacity: 0.8;
                         cursor: pointer;
@@ -131,6 +130,7 @@
             .contact {
                 margin-top: 15rem;
                 li {
+                    
                     a {
                         font-size: 0.95rem;
                         text-decoration: none;
@@ -144,22 +144,16 @@
 
 .navbar.active {
     height: 3.5rem;
-    background-color: white;
+    background-color: $backgroundColour;
     display: flex;
     align-items: center;
     box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
-    #navbar__logo {
-        font-size: 2rem;
-        color: $mainTextColour;
-    }
-    .nav__toggle {
-        color: $offTextColour;
-    }
 }
 
-.nav__hidden {
-    transform: translateY(-5rem);
+.navbar.active #navbar__logo {
+    font-size: 1.4rem;
 }
+
 
 @media screen and (min-width: 768px) {
     .navbar {
@@ -208,17 +202,15 @@
             }
         }
     }
-    .navbar.active #navbar__logo {
-        font-size: 1.6rem;
-    }
-    
-    .navbar.active .navbar__item {
-        color: $offTextColour;
-        font-size: .9rem;
-    }
 }
 
+.navbar.active #navbar__logo {
+    font-size: 1.6rem;
+}
 
+.navbar.active .navbar__links {
+    font-size: .9rem;
+}
 
 @media screen and (min-width: 1312px) {
     .navbar {
@@ -226,40 +218,29 @@
         .nav__container {
             width: 70%;
             #navbar__logo {
-                font-size: 3rem;
-                color: $mainTextColour;
+                font-size: 2rem;
             }
             .navbar__menu {
                 .navbar__item {
                     margin-left: 3.5rem;
                     .navbar__links {
-                        font-size: 1.3rem;
+                        font-size: 1.1rem;
                     }
                 }
             }
         }
     }
-    .navbar.active {
-        height: 4rem;
-        display: flex;
-        align-items: center;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
-        .nav__container {
-            #navbar__logo {
-                font-size: 2.5rem;
+}
 
-                color: $mainTextColour;
-            }
-            .navbar__menu {
-                .navbar__item {
-                    color: black;
-                    .navbar__links {
-                        font-size: 1.3rem;
-                        color: black;
-                    }
-                }
-                
-            }
-        }
-    } 
+
+.navbar.active {
+    height: 3.5rem;
+    background-color: #D2953A;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+}
+
+.navbar.active .navbar__links {
+    font-size: .9rem;
 }

@@ -6,7 +6,6 @@ const scrollTop = () => {
     scrollTopIcon.classList.toggle('active', window.scrollY > 800);
 }
 
-console.log(window.scrollY)
 const scrollToTop = () => {
     window.scrollTo({
         top: 0,
@@ -61,7 +60,6 @@ const highlightCurrent = () => {
 window.addEventListener('scroll', highlightCurrent);
 window.addEventListener('click', highlightCurrent);
 
-// 
 // Mobile Menu
 
 const menu = document.querySelector('#open-menu')
@@ -94,7 +92,7 @@ menuClose.addEventListener('click', closeMenu);
 const nav = document.querySelector('.navbar');
 
 const scrollNav = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY > 100) {
         nav.classList.add('active')
     } else {
         nav.classList.remove('active')
@@ -102,22 +100,6 @@ const scrollNav = () => {
 }
 
 window.addEventListener("scroll", scrollNav);
-
-// Nav hidden on scroll
-
-let lastScrollY = window.scrollY;
-window.addEventListener("scroll", () => {
-    if (lastScrollY < window.scrollY) {
-        if (menuLinks.classList.contains('active')) {
-            return;
-        } else {
-            nav.classList.add('nav__hidden');
-        }
-    } else {
-        nav.classList.remove('nav__hidden');
-    }
-    lastScrollY = window.scrollY;
-})
 
 // Fade in animations
 

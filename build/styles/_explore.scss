@@ -112,6 +112,7 @@
                 align-items: flex-start;
                 margin-top: 4rem;
                 width: 80%;
+
                 padding: 3rem;
                 .explore__textBtn {
                     display: flex;
@@ -136,7 +137,6 @@
                     }
                 }
                 h2 {
-                    font-size: $desktopHeaderSize;
                     width: 100%;
                 }
                 p {

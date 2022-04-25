@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Source+Sans+Pro:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap");
 .menu-highlight {
   opacity: .5;
   text-decoration: underline;
@@ -43,14 +42,12 @@
 }
 
 .navbar .nav__container #navbar__logo {
-  font-family: 'Baloo2', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   text-decoration: none;
   color: white;
   z-index: 99;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
 }
 
 .navbar .nav__container .nav__toggle {
@@ -182,6 +179,7 @@
   -webkit-transition: 100ms;
   transition: 100ms;
   margin: 1.25rem 0;
+  color: white;
 }
 
 .navbar .nav__container .navbar__menu.active .navbar__item .navbar__links {
@@ -189,7 +187,6 @@
   font-size: 1.1rem;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
-  letter-spacing: .1rem;
 }
 
 .navbar .nav__container .navbar__menu.active .navbar__item .navbar__links:hover {
@@ -209,7 +206,7 @@
 
 .navbar.active {
   height: 3.5rem;
-  background-color: white;
+  background-color: #EEBC71;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,17 +218,7 @@
 }
 
 .navbar.active #navbar__logo {
-  font-size: 2rem;
-  color: #D2953A;
-}
-
-.navbar.active .nav__toggle {
-  color: #D2953A;
-}
-
-.nav__hidden {
-  -webkit-transform: translateY(-5rem);
-          transform: translateY(-5rem);
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -296,13 +283,14 @@
     display: none;
     width: 0;
   }
-  .navbar.active #navbar__logo {
-    font-size: 1.6rem;
-  }
-  .navbar.active .navbar__item {
-    color: #D2953A;
-    font-size: .9rem;
-  }
+}
+
+.navbar.active #navbar__logo {
+  font-size: 1.6rem;
+}
+
+.navbar.active .navbar__links {
+  font-size: .9rem;
 }
 
 @media screen and (min-width: 1312px) {
@@ -313,42 +301,37 @@
     width: 70%;
   }
   .navbar .nav__container #navbar__logo {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .navbar .nav__container .navbar__menu .navbar__item {
     margin-left: 3.5rem;
   }
   .navbar .nav__container .navbar__menu .navbar__item .navbar__links {
-    font-size: 1.3rem;
-  }
-  .navbar.active {
-    height: 5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
-            box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
-  }
-  .navbar.active .nav__container #navbar__logo {
-    font-size: 2.5rem;
-  }
-  .navbar.active .nav__container .navbar__menu .navbar__item {
-    color: black;
-  }
-  .navbar.active .nav__container .navbar__menu .navbar__item .navbar__links {
-    font-size: 1.3rem;
-    color: black;
+    font-size: 1.1rem;
   }
 }
 
+.navbar.active {
+  height: 3.5rem;
+  background-color: #D2953A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .navbar__links {
+  font-size: .9rem;
+}
+
 .hero__section {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-image: url(../images/hero__background.svg);
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -5rem;
@@ -362,6 +345,7 @@
 }
 
 .hero__section .hero__container {
+  width: 100%;
   margin-left: 7%;
 }
 
@@ -369,26 +353,28 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10.5rem;
+  margin-top: 11.7rem;
 }
 
 .hero__section .hero__container .hero__header .bar {
   margin-top: .5rem;
   background-color: #F2AC42;
-  width: .7rem;
-  height: 12rem;
+  width: .6rem;
+  height: 11rem;
 }
 
 .hero__section .hero__container .hero__header .hero__title {
   margin-left: .9rem;
+  margin-bottom: 3rem;
   z-index: 1;
 }
 
 .hero__section .hero__container .hero__header .hero__title h1 {
-  margin-top: .3rem;
   color: white;
   font-size: 2.95rem;
   font-weight: 400;
+  text-transform: capitalize;
+  line-height: 1.25;
   font-family: "Source Sans Pro", sans-serif;
   -webkit-transform: translateY(10%);
           transform: translateY(10%);
@@ -396,44 +382,37 @@
 
 .hero__section .hero__container .hero__header .hero__title h1 .hero__way {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 
 .hero__section .hero__container .hero__header .hero__title p {
   color: white;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-left: .2rem;
-  font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-size: 1.325rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.hero__section .hero__container button {
+.hero__section .hero__container a {
   padding: .5rem 1.2rem;
-  margin-top: 3rem;
   color: white;
   background-color: #F2AC42;
   outline: none;
   border: none;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   -webkit-transition: 200ms ease-in;
   transition: 200ms ease-in;
   text-decoration: none;
 }
 
-.hero__section .hero__container button:hover {
+.hero__section .hero__container a:hover {
   background-color: #fdd18e;
   cursor: pointer;
 }
 
-.hero__section .hero__container button a {
-  text-decoration: none;
-  color: white;
-}
-
 .hero__section .hero__socials {
-  margin-top: 3rem;
-  margin-bottom: 4.5rem;
+  margin-top: 5rem;
   padding-right: 2rem;
   width: 60%;
   display: -webkit-box;
@@ -493,6 +472,7 @@
     font-size: 1.2rem;
   }
   .hero__section .hero__socials {
+    margin-top: 6rem;
     padding-right: 2.5rem;
   }
   .hero__section .hero__socials .icon {
@@ -508,32 +488,31 @@
     margin-left: 12%;
   }
   .hero__section .hero__container .hero__header {
-    margin-top: 13.5rem;
+    margin-top: 13rem;
   }
   .hero__section .hero__container .hero__header .bar {
     height: 17rem;
   }
   .hero__section .hero__container .hero__header .hero__title {
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
   }
   .hero__section .hero__container .hero__header .hero__title h1 {
     margin-top: -.5rem;
-    font-size: 4.5rem;
-  }
-  .hero__section .hero__container .hero__header .hero__title h1 .hero__way {
     font-size: 5rem;
   }
+  .hero__section .hero__container .hero__header .hero__title h1 .hero__way {
+    font-size: 6rem;
+  }
   .hero__section .hero__container .hero__header .hero__title p {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .hero__section .hero__container a {
-    padding: .5rem .7rem;
+    padding: .5rem 1.2rem;
     font-size: 1.2rem;
   }
   .hero__section .hero__socials {
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding-right: 16rem;
-    padding-bottom: 4rem;
   }
   .hero__section .hero__socials .icon {
     margin: 1rem 0;
@@ -549,8 +528,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  padding-top: 7rem;
-  margin-top: -3rem;
+  padding-top: 6rem;
   width: 95%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -595,15 +573,18 @@
 .destinations__section .destination__cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   margin-top: 3.5rem;
   width: 90%;
   height: 100%;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -617,17 +598,9 @@
 }
 
 .destinations__section .destination__cards .destination__container .destination__image {
-  height: 100%;
+  height: 15.75rem;
   -webkit-transition: 200ms ease-in;
   transition: 200ms ease-in;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-
-.destinations__section .destination__cards .destination__container .destination__image:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .destinations__section .destination__cards .destination__container .destination__text {
@@ -662,6 +635,11 @@
 .destinations__section .destination__cards .destination__container .destination__header h1 {
   font-size: 2rem;
   font-weight: 400;
+}
+
+.destinations__section .destination__cards .destination__container:hover .destination__image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .destinations__section .destination__cards .destinations__more {
@@ -800,10 +778,10 @@
 
 @media screen and (min-width: 1312px) {
   .destinations__section {
-    padding-top: 8rem;
+    padding-top: 5rem;
   }
   .destinations__section .destinations__header h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .destinations__section .destinations__header p {
     width: 100%;
@@ -811,7 +789,7 @@
     margin-top: 1rem;
   }
   .destinations__section .destination__cards {
-    width: 60%;
+    width: 55%;
     height: 100%;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -823,13 +801,13 @@
             justify-content: center;
   }
   .destinations__section .destination__cards .destination__container {
-    min-height: 30rem;
+    height: 45vh;
     width: 100%;
     -webkit-transform: translateY(10%);
             transform: translateY(10%);
   }
   .destinations__section .destination__cards .destination__container .destination__image {
-    height: 100%;
+    height: 45vh;
     -webkit-transition: 200ms ease-in;
     transition: 200ms ease-in;
   }
@@ -1013,7 +991,7 @@
 
 .explore__section .explore__container .explore__text h2 {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 4rem;
+  font-size: 2rem;
   width: 90%;
   color: #F2AC42;
   font-weight: 400;
@@ -1448,11 +1426,11 @@
 
 @media screen and (min-width: 1312px) {
   .discover__section {
-    padding: 3rem 0 6rem 0;
+    padding: 6rem 0 6rem 0;
   }
   .discover__section .discover__header h1 {
     margin-top: 3rem;
-    font-size: 4rem;
+    font-size: 3rem;
     width: 100%;
   }
   .discover__section .discover__header p {
@@ -1460,11 +1438,11 @@
   }
   .discover__section .discover__container {
     margin-top: 3rem;
-    width: 54%;
+    width: 60%;
   }
   .discover__section .discover__container .discover__card {
-    width: 20rem;
-    height: 30rem;
+    width: 23rem;
+    height: 35rem;
   }
 }
 
@@ -1750,7 +1728,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 1rem 0 3rem 0;
+    padding: 1rem 0 4rem 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1775,7 +1753,7 @@
     list-style: none;
     -webkit-transform: translateY(10%);
             transform: translateY(10%);
-    margin: 0;
+    margin: 1rem 0 2rem 0;
   }
   .footer__section .footer__container .container .footer__logo {
     display: block;
@@ -1799,7 +1777,7 @@
     cursor: pointer;
   }
   .footer__section .footer__container .footer__copyright h4 {
-    font-size: .9rem;
+    font-size: 1rem;
   }
   .footer__section .footer__container .footer__copyright p {
     margin-top: -.1rem;
